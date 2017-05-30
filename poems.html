@@ -1,74 +1,52 @@
-<!doctype html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code in My System</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section id="info">
+            <header>
+                <hgroup>
+                    <h1>Code in My System</h1>
+                    <h2>By Selena Tuyen</h2>
+                </hgroup>
+            </header>
+<!--             <aside>
+                <p>Quotes: <a href="http://butdoesitfloat.com/" target="_blank">butdoesitfloat.com</a></p>
+            </aside> -->
+        </section>
+        <section class="quotes"></section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script src="js/foldscroll.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/titles.js"></script>
+        <script type="text/javascript">
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+            $(function() {
 
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>Code in My System</title>
-</head>
-<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+                var limit = 15;
+                var $container = $( '.quotes' );
 
-<body data-hijacking="on" data-animation="gallery">
-	<section class="cd-section visible">
-		<div>
-			<h2>Code in My System
-			by Selena Tuyen
-			</h2>
-		</div>
-	</section>
+                // Populate
+                for ( var i = 0, n = Math.min( limit, poems.length ); i < n; i++ ) {
 
-	<section class="cd-section">
-		<div>
-			<h2>The Big 4</h2>
-			
-		</div>
-	</section>
+                    $container.append(
+                        '<article>' +  
+                          '<em>' + titles[i] + '</em>' +
+                            '<p>' + poems[i] + '</p>' + 
+                        '</article>');
+                }
 
-	<section class="cd-section">
-		<div>
-			<h2>Inside the Code</h2>
-		</div>
-	</section>
+                // Call the foldscroll plugin
+                $container.foldscroll({
+                    perspective: 900,
+                    margin: '220px'
+                });
+            });
 
-	<section class="cd-section">
-		<div>
-			<h2>Deadlock</h2>
-		</div>
-	</section>
-
-	<section class="cd-section">
-		<div>
-			<h2>Shells</h2>
-		</div>
-	</section>
-
-	<section class="cd-section">
-		<div>
-			<h2>Zombie</h2>
-		</div>
-	</section>
-
-	<section class="cd-section">
-		<div>
-			<h2>Stack</h2>
-		</div>
-	</section>
-	<nav>
-		<ul class="cd-vertical-nav">
-			<li><a href="#0" class="cd-prev inactive">Next</a></li>
-			<li><a href="#0" class="cd-next">Prev</a></li>
-		</ul>
-	</nav> <!-- .cd-vertical-nav -->
-
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/velocity.min.js"></script>
-<script src="js/velocity.ui.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-</body>
+        </script>
+    </body>
 </html>
