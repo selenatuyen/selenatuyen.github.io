@@ -83,6 +83,12 @@ Main Components
 .cd-section:nth-of-type(5) > div {
   background-color: #f06a59;
 }
+.cd-section:nth-of-type(6) > div {
+  background-color: #63C132;
+}
+.cd-section:nth-of-type(7) > div {
+  background-color: #BD4F6C;
+}
 [data-animation="parallax"] .cd-section > div, [data-animation="fixed"] .cd-section > div, [data-animation="opacity"] .cd-section > div {
   background-position: center center;
   background-repeat: no-repeat;
