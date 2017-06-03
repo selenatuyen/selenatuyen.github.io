@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|VT323|Bungee+Shade" rel="stylesheet"> 
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<title>Code in My System</title>
 	<script type="text/javascript" src="./dist/roll.js"></script>
 
@@ -118,59 +119,60 @@
 		</div>
 		<div id="s7" class="step">
 			<h1 class="ptitles">Glossary</h1>
-			<h3 class="gsub">The Big 4</h3>
-			<p class="pcontent">
-				Blue, red, yellow, and green - the colors of google.<br>
-				Bugs - errors in code.<br>
-				Page - Larry Page is the cofounder of Google, also webpage.<br>
-				Sourced - Often times the primary files in a program are called the source code<br>
-				Zuck - Mark Zuckerberg is the founder of Facebook.<br>
-				Packets - internet protocol involves sending packets of data from a client to server<br>
-				Clouds - Amazon is a key player in cloud computing with Amazon Web Services(AWS) which provides an on-demand cloud platform for customers to use. <br>
-				Bezos - Jeff Bezos is the founder of Amazon. <br>
-				Windows - An operating system created by Microsoft<br>
-				See Sharp - A play on C#, which is a programming language created by Microsoft.<br>
-				Gates - Bill Gates is the founder of Microsoft.<br>
-				Python's Script - python is a programming language often used for scripting<br>
-				Crack their Code - Cracking the Coding Interview is a book that is a staple in all software engineer&#39;s libraries.  It is a interview book that teaches how to approach and better solve coding interview portions.<br>
-			</p>
-			<h3 class="gsub">The Code</h3>
-			<p class="pcontent">
-				Written in Java.<br>
-				// - are used to preceed a comment in code, which is a line that will not be compiled by the compiler.<br>
-				Call help...even yourself- refers to modularization which is breaking up your code into different functions and calling them to allow reusabilty and ease of debugging. A function calling itself is a concept called recursion which is often used in dynamic programming. <br>
-			</p>
-			<h3 class="gsub">Deadlock</h3>
-			<p class="pcontent">
-				Deadlock - Is a concept found in concurrent programming which involves multiple processes running simultaneously.  A deadlock is when 2 or more processes can no longer continue because they need another resource in order to complete their task.  Typically the processes are holding each other&#39;s resource but both are waiting for the other to release it.  For a deadlock to occur these 4 conditions need to be met: Mutual exclusion, hold and wait, no preemption, and circular wait. <br>
-				Mutual Exclusion - the resources needed can only be used by one process at a time and are unshareable <br>
-				Hold and Wait - a process is currently holding at least one resource and requesting additional resouces which are being held by other processes <br>
-				No Preemption - a resource can be released only voluntarily by the process holding it <br>
-				Circular Wait - each process must be waiting for a resource which is being held by another process, which in turn is waiting for the first process to release the resource<br>
-			</p>
-			<h3 class="gsub">Mergesort</h3>
-			<p class="pcontent">
-				
-			</p>
-			<h3 class="gsub">Shells</h3>
-			<p class="pcontent">
-				Shell - is a terminal where commands can be entered<br>
-				Echoes - echo is a command used in Bash shells to print a line to the shell<br>
-				Crushed - is a play on crashed, when a shell script fails it can "crash"<br>
-				Bash- Bourne Again Shell, a type of shell<br>
-				sh - Bourne Shell, one of the original shells<br>
-				ssh - Secure Shell, typically used to access a shell terminal remotely<br>
-			</p>
-			<h3 class="gsub">Zombie</h3>
-			<p class="pcontent">
-				Zombie - A zombie process is a child process has fully completed running but still exists in the process table<br>
-				Child - a child process is ran by a parent process<br>
-				System - operating system that is running the process<br>
-				Ran - running code<br>
-				Terminated State - once a process reaches a state of completion it&#39;s state is changed to terminated<br>
-				Reaper - when a child process id is removed from the process table it is said to be reaped<br>
-				Waiting Parent - the parent process is waiting for a response that their child process has terminated so they can remove the process from the table<br>
-			</p>
+			<div id"p0" class="dcontent">
+				<h3 class="gsub">The Big 4</h3>
+				<ul>
+					<li><b class="btits">Blue, red, yellow, and green</b> - the colors of google.</li><br>
+					<li><b class="btits">Bugs</b> - errors in code.</li><br>
+					<li><b class="btits">Page</b> - Larry Page is the cofounder of Google, also webpage.</li><br>
+					<li><b class="btits">Sourced</b> - Often times the primary files in a program are called the source code</li><br>
+					<li><b class="btits">Zuck</b> - Mark Zuckerberg is the founder of Facebook.</li><br>
+					<li><b class="btits">Packets</b> - internet protocol involves sending packets of data from a client to server</li><br>
+					<li><b class="btits">Clouds</b> - Amazon is a key player in cloud computing with Amazon Web Services(AWS) which provides an on-demand cloud platform for customers to use.</li><br>
+					<li><b class="btits">Bezos</b> - Jeff Bezos is the founder of Amazon.</li><br>
+					<li><b class="btits">Windows</b> - An operating system created by Microsoft</li><br>
+					<li><b class="btits">See Sharp</b> - A play on C#, which is a programming language created by Microsoft.</li><br>
+					<li><b class="btits">Gates</b> - Bill Gates is the founder of Microsoft.</li><br>
+					<li><b class="btits">Python's Script</b> - python is a programming language often used for scripting</li><br>
+					<li><b class="btits">Crack their Code</b> - Cracking the Coding Interview is a book that is a staple in all software engineer&#39;s libraries.  It is a interview book that teaches how to approach and better solve coding interview portions.</li><br>
+				</ul>
+				<h3 id"p1" class="gsub">The Code</h3>
+				<ul>
+					<li><b class="btits">//</b> - are used to preceed a comment in code, which is a line that will not be compiled by the compiler.</li><br>
+					<li><b class="btits">Call help...even yourself</b>- refers to modularization which is breaking up your code into different functions and calling them to allow reusabilty and ease of debugging. A function calling itself is a concept called recursion which is often used in dynamic programming.</li><br>
+				</ul>
+				<h3 id="p2" class="gsub">Deadlock</h3>
+				<ul>
+					<li><b class="btits">Deadlock</b> - Is a concept found in concurrent programming which involves multiple processes running simultaneously.  A deadlock is when 2 or more processes can no longer continue because they need another resource in order to complete their task.  Typically the processes are holding each other&#39;s resource but both are waiting for the other to release it.  For a deadlock to occur these 4 conditions need to be met: Mutual exclusion, hold and wait, no preemption, and circular wait.</li> <br>
+					<li><b class="btits">Mutual Exclusion</b> - the resources needed can only be used by one process at a time and are unshareable</li><br>
+					<li><b class="btits">Hold and Wait</b> - a process is currently holding at least one resource and requesting additional resouces which are being held by other processes</li><br>
+					<li><b class="btits">No Preemption</b> - a resource can be released only voluntarily by the process holding it</li><br>
+					<li><b class="btits">Circular Wait</b> - each process must be waiting for a resource which is being held by another process, which in turn is waiting for the first process to release the resource</li><br>
+				</ul>
+				<h3 class="gsub">Mergesort</h3>
+				<ul>
+					<li><b class="btits">Mergesort</b>-sorting O(nlogn) </li>
+				</ul>
+				<h3 class="gsub">Shells</h3>
+				<ul>
+					<li><b class="btits">Shell</b> - is a terminal where commands can be entered</li><br>
+					<li><b class="btits">Echoes</b> - echo is a command used in Bash shells to print a line to the shell</li><br>
+					<li><b class="btits">Crushed</b> - is a play on crashed, when a shell script fails it can "crash"</li><br>
+					<li><b class="btits">Bash</b>- Bourne Again Shell, a type of shell<br>
+					sh - Bourne Shell, one of the original shells</li><br>
+					<li><b class="btits">ssh</b> - Secure Shell, typically used to access a shell terminal remotely</li><br>
+				</ul>
+				<h3 class="gsub">Zombie</h3>
+				<ul>
+					<li><b class="btits">Zombie</b> - A zombie process is a child process has fully completed running but still exists in the process table</li><br>
+					<li><b class="btits">Child</b> - a child process is ran by a parent process</li><br>
+					<li><b class="btits">System</b> - operating system that is running the process</li><br>
+					<li><b class="btits">Ran</b> - running code</li><br>
+					<li><b class="btits">Terminated State</b> - once a process reaches a state of completion it&#39;s state is changed to terminated</li><br>
+					<li><b class="btits">Reaper</b> - when a child process id is removed from the process table it is said to be reaped</li><br>
+					<li><b class="btits">Waiting Parent</b> - the parent process is waiting for a response that their child process has terminated so they can remove the process from the table</li><br>
+				</ul>
+			</div>
 		</div>
 
 	</div>
@@ -181,14 +183,9 @@
 
 <div id="progress"></div>
 
-
 <div id="menu">
-	<h1>Index</h1>
-	<p>Click to jump to poems</p>
-
-	<hr />
-
-	<p class="field"><span class="label">Current step</span><span class="value" id="currStep"></span></p>
+	<h1 id="index">Code in My System</h1>
+<!-- 	<p class="field"><span class="label">Current step</span><span class="value" id="currStep"></span></p>
 	<p class="field"><span class="label">Current step progress</span><span class="value" id="currStepProgress"></span></p>
 	<p class="field"><span class="label">Current position</span><span class="value" id="currPos"></span></p>
 	<p class="field"><span class="label">Total progress</span><span class="value" id="totalProgress"></span></p>
@@ -197,17 +194,30 @@
 	<p class="field"><span class="label">Steps</span><span class="value" id="numSteps"></span></p>
 	<p class="field"><span class="label">Viewport height</span><span class="value" id="viewportHeight"></span></p>
 	<p class="field"><span class="label">Roll height</span><span class="value" id="paneHeight"></span></p>
-	<p class="field"><span class="label">Padding between steps</span><span class="value" id="padding">100px</span></p>
+	<p class="field"><span class="label">Padding between steps</span><span class="value" id="padding">100px</span></p> -->
 
-	<hr />
-	<p class="field"><span class="label">Jump to</span>
-		<span id="goSteps">
-			<a href="#" onclick="goto(1)">step 2</a> &nbsp;
-			<a href="#" onclick="goto(3)">step 4</a>
-		</span>
+	<!-- <hr> -->
+	<!-- <p id="desc">Scroll or click to jump to poems</p> -->
+
+	<!-- <p class="field"><span class="label">Jump to</span> -->
+		<div id="goSteps">
+			<a class="pnav" href="#" onclick="goto(1)">The Big 4</a> 
+			<br>
+			<a class="pnav" href="#" onclick="goto(2)">The Code</a>
+			<br>
+			<a class="pnav" href="#" onclick="goto(3)">Deadlock</a> 
+			<br>
+			<a class="pnav" href="#" onclick="goto(4)">Mergesort</a>
+			<br>
+			<a class="pnav" href="#" onclick="goto(5)">Shells</a> 
+			<br>
+			<a class="pnav" href="#" onclick="goto(6)">Zombie</a>
+			<br>
+			<a class="pnav" href="#" onclick="goto(7)">Glossary</a>
+		</div>
 	</p>
 </div>
-
+<script type="text/javascript" src="./js/glossary.js"></script>
 <script type="text/javascript" src="./js/sushi.js"></script>
 <script type="text/javascript" src="./js/demo.js"></script>
 
