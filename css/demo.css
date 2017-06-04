@@ -133,17 +133,30 @@ ul li{
   padding:0;
 }
 
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    width: 10%;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #00cc00;
+}
+
 .btits{
   color:#99ccff;
 }
 
 .dcontent{
-  color: #fff;
-  margin:13% 0% 25% 60%;
-  font-family: 'Ubuntu Mono', monospace;
-  text-align: left;
-  font-size: 15px;
-
+  visibility: hidden;
+  position:absolute;
 }
 
 .pcontent{
@@ -160,6 +173,18 @@ ul li{
   top: -100%;
 }
 
+#glossyContent{
+  margin:13% 0% 25% 60%;
+
+}
+
+.active{
+  visibility: visible;
+  color: #fff;
+  font-family: 'Ubuntu Mono', monospace;
+  text-align: left;
+  font-size: 15px;
+}
 
 /* what's the styles for next steps */
 .step.next {

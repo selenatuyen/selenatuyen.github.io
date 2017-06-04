@@ -1,52 +1,227 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Code in My System</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-        <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <section id="info">
-            <header>
-                <hgroup>
-                    <h1>Code in My System</h1>
-                    <h2>By Selena Tuyen</h2>
-                </hgroup>
-            </header>
-<!--             <aside>
-                <p>Quotes: <a href="http://butdoesitfloat.com/" target="_blank">butdoesitfloat.com</a></p>
-            </aside> -->
-        </section>
-        <section class="quotes"></section>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script src="js/foldscroll.js"></script>
-        <script src="js/quotes.js"></script>
-        <script src="js/titles.js"></script>
-        <script type="text/javascript">
-// <!--https://github.com/williamngan/roll -->
-            $(function() {
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono|VT323|Bungee+Shade" rel="stylesheet"> 
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<title>Code in My System</title>
+	<script type="text/javascript" src="./dist/roll.js"></script>
 
-                var limit = 15;
-                var $container = $( '.quotes' );
+	<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="./css/demoStyles.css" />
 
-                // Populate
-                for ( var i = 0, n = Math.min( limit, poems.length ); i < n; i++ ) {
+</head>
+<body>
 
-                    $container.append(
-                        '<article>' +  
-                          '<em>' + titles[i] + '</em>' +
-                            '<p>' + poems[i] + '</p>' + 
-                        '</article>');
-                }
+<div id="roll">
 
-                // Call the foldscroll plugin
-                $container.foldscroll({
-                    perspective: 900,
-                    margin: '220px'
-                });
-            });
+	<div id="steps">
+		<div id="s0" class="step">
+			<h1 id="titleyo">Code in My System<span class="blinking-cursor">|</span></h1>
+			<h3 id="name">Selena Tuyen</h3>
+		</div>
+		<div id="s1" class="step">
+			<h1 class="ptitles">The Big 4</h1>
+			<p class="pcontent">
+			You dream of blue, red, yellow, and green </br>
+			goggles to chase down all the bugs</br> 
+			in order to create a new Page</br> 
+			</br>
+			Maybe take one from the book</br> 
+			sourced with thousands of lines, spaces,</br> 
+			and friends like that Zuck.</br> 
+			</br>
+			You venture into the Amazon</br> 
+			sending packets over nets through the river</br> 
+			rapids, high as the clouds next to Bezos.</br> 
+			</br>
+			Look deeper through the Windows </br>
+			and see sharp bots create water</br> 
+			systems that pour through the Gates.</br> 
+			</br>
+			These four pyramids of gold engraved </br>
+			with the python&#39;s script. Try to crack </br>
+			their code. Just please don&#39;t crash.</br>
+			</p>
+		</div>
+		<div id="s2" class="step">
+			<h1 class="ptitles">The Code</h1>
+			<p class="pcontent">
+			import all you need;</br>
+			</br>
+			a class, public, private, or protected{</br>
+				&emsp;a main function, public (and a string of parameters){</br>
+					&emsp; &emsp;//solve all your problems here</br>
+					&emsp; &emsp;//or call for help from another, even yourself</br>
+					&emsp;&emsp; helperFunct(x);</br>
+					</br>
+					&emsp;&emsp; return if you wish;</br>
+				&emsp;}</br>
+			}</br>	
+			</p>
+		</div>
+		<div id="s3" class="step">
+			<h1 class="ptitles">Deadlock</h1>
+			<p class="pcontent">
+			Mutually exclusive inside this system</br>
+			Fight me for the unreachable need</br>
+			As prevention persists between us</br>
+			</br>
+			Hold and wait with the one you have</br>
+			Still, as another acts the same</br>
+			Unknowingly in need of each other</br>
+			</br> 
+			No preemption within this system</br>
+			Both are unwilling to relinquish </br>
+			Their own, without voluntary release.</br>
+			</br> 
+			Circular wait, waiting for a chance</br>
+			But you hold what I need to</br>
+			complete the process</br>
+			</p>
+		</div>
+		<div id="s4" class="step">
+			<h1 class="ptitles">Mergesort</h1>
+			<p class="pcontent">
+			Divide me in halves, left and right</br>
+			Hollow out a shell so I can be cloned</br>
+			Start at the beginning and put me in order</br>
+ 			</br>
+			Element by element, access and compare</br>
+			Target the final form and put me back together</br>
+			</p>
+		</div>
+		<div id="s5" class="step">
+			<h1 class="ptitles">Shells</h1>
+			<p class="pcontent">
+			My shells are colored black</br>
+			Speckled with lines of white</br>
+			</br>
+			I can talk to my shells. They</br>
+			even respond with echoes.</br>
+			</br>
+			My shells do everything I ask</br>
+			Unless they are crushed</br>
+			</br>
+			Bash sh ssh, my shells.</br>
+			</p>
+		</div>
+		<div id="s6" class="step">
+			<h1 class="ptitles">Zombie</h1>
+			<p class="pcontent">
+			A child found in the system</br>
+			Ran until she was complete</br>
+			Reaching the terminated state</br>
+			</br>
+			Though her presence still lingers</br>
+			Since the reaper has yet to collect</br>
+			Please notify her waiting parent.</br>
+			</p>
+		</div>
+		<div id="s7" class="step">
+			<h1 class="ptitles">Glossary</h1>
+			<div id="glossyContent">
+				<div id="p0" class="dcontent active">
+					<h3 class="gsub">The Big 4</h3>
+					<ul>
+						<li><b class="btits">Blue, red, yellow, and green</b> - the colors of google.</li><br>
+						<li><b class="btits">Bugs</b> - errors in code.</li><br>
+						<li><b class="btits">Page</b> - Larry Page is the cofounder of Google, also webpage.</li><br>
+						<li><b class="btits">Sourced</b> - Often times the primary files in a program are called the source code</li><br>
+						<li><b class="btits">Zuck</b> - Mark Zuckerberg is the founder of Facebook.</li><br>
+						<li><b class="btits">Packets</b> - internet protocol involves sending packets of data from a client to server</li><br>
+						<li><b class="btits">Clouds</b> - Amazon is a key player in cloud computing with Amazon Web Services(AWS) which provides an on-demand cloud platform for customers to use.</li><br>
+						<li><b class="btits">Bezos</b> - Jeff Bezos is the founder of Amazon.</li><br>
+						<li><b class="btits">Windows</b> - An operating system created by Microsoft</li><br>
+						<li><b class="btits">See Sharp</b> - A play on C#, which is a programming language created by Microsoft.</li><br>
+						<li><b class="btits">Gates</b> - Bill Gates is the founder of Microsoft.</li><br>
+						<li><b class="btits">Python's Script</b> - python is a programming language often used for scripting</li><br>
+						<li><b class="btits">Crack their Code</b> - Cracking the Coding Interview is a book that is a staple in all software engineer&#39;s libraries.  It is a interview book that teaches how to approach and better solve coding interview portions.</li><br>
+					</ul>
+				</div>
+				<div id="p1" class="dcontent">
+					<h3 class="gsub">The Code</h3>
+					<ul>
+						<li><b class="btits">//</b> - are used to preceed a comment in code, which is a line that will not be compiled by the compiler.</li><br>
+						<li><b class="btits">Call help...even yourself</b>- refers to modularization which is breaking up your code into different functions and calling them to allow reusabilty and ease of debugging. A function calling itself is a concept called recursion which is often used in dynamic programming.</li><br>
+					</ul>
+				</div>		
+				<div id="p2" class="dcontent">		
+					<h3 class="gsub">Deadlock</h3>
+					<ul>
+						<li><b class="btits">Deadlock</b> - Is a concept found in concurrent programming which involves multiple processes running simultaneously.  A deadlock is when 2 or more processes can no longer continue because they need another resource in order to complete their task.  Typically the processes are holding each other&#39;s resource but both are waiting for the other to release it.  For a deadlock to occur these 4 conditions need to be met: Mutual exclusion, hold and wait, no preemption, and circular wait.</li> <br>
+						<li><b class="btits">Mutual Exclusion</b> - the resources needed can only be used by one process at a time and are unshareable</li><br>
+						<li><b class="btits">Hold and Wait</b> - a process is currently holding at least one resource and requesting additional resouces which are being held by other processes</li><br>
+						<li><b class="btits">No Preemption</b> - a resource can be released only voluntarily by the process holding it</li><br>
+						<li><b class="btits">Circular Wait</b> - each process must be waiting for a resource which is being held by another process, which in turn is waiting for the first process to release the resource</li><br>
+					</ul>
+				</div>
+				<div id="p3" class="dcontent">
+					<h3 class="gsub">Mergesort</h3>
+					<ul>
+						<li><b class="btits">Mergesort</b>-sorting O(nlogn) </li>
+					</ul>
+				</div>
+				<div id="p4" class="dcontent">
+					<h3 class="gsub">Shells</h3>
+					<ul>
+						<li><b class="btits">Shell</b> - is a terminal where commands can be entered</li><br>
+						<li><b class="btits">Echoes</b> - echo is a command used in Bash shells to print a line to the shell</li><br>
+						<li><b class="btits">Crushed</b> - is a play on crashed, when a shell script fails it can "crash"</li><br>
+						<li><b class="btits">Bash</b>- Bourne Again Shell, a type of shell<br>
+						sh - Bourne Shell, one of the original shells</li><br>
+						<li><b class="btits">ssh</b> - Secure Shell, typically used to access a shell terminal remotely</li><br>
+					</ul>
+				</div>
+				<div id="p5" class="dcontent">
+					<h3 class="gsub">Zombie</h3>
+					<ul>
+						<li><b class="btits">Zombie</b> - A zombie process is a child process has fully completed running but still exists in the process table</li><br>
+						<li><b class="btits">Child</b> - a child process is ran by a parent process</li><br>
+						<li><b class="btits">System</b> - operating system that is running the process</li><br>
+						<li><b class="btits">Ran</b> - running code</li><br>
+						<li><b class="btits">Terminated State</b> - once a process reaches a state of completion it&#39;s state is changed to terminated</li><br>
+						<li><b class="btits">Reaper</b> - when a child process id is removed from the process table it is said to be reaped</li><br>
+						<li><b class="btits">Waiting Parent</b> - the parent process is waiting for a response that their child process has terminated so they can remove the process from the table</li><br>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-        </script>
-    </body>
+	</div>
+	<div id="wrapper">
+		<div id="pane"></div>
+	</div>
+</div>
+
+<div id="progress"></div>
+
+<div id="menu">
+	<h1 id="index">Code in My System</h1>
+		<div id="goSteps">
+			<a class="pnav" href="#" onclick="goto(1)">The Big 4</a> 
+			<br>
+			<a class="pnav" href="#" onclick="goto(2)">The Code</a>
+			<br>
+			<a class="pnav" href="#" onclick="goto(3)">Deadlock</a> 
+			<br>
+			<a class="pnav" href="#" onclick="goto(4)">Mergesort</a>
+			<br>
+			<a class="pnav" href="#" onclick="goto(5)">Shells</a> 
+			<br>
+			<a class="pnav" href="#" onclick="goto(6)">Zombie</a>
+			<br>
+			<a class="pnav" href="#" onclick="goto(7)">Glossary</a>
+			<br>
+			<button type="button" id="prevButt">&#8592;</button>
+			<button type="button" id="nextButt">&#8594;</button>
+
+		</div>
+	</p>
+</div>
+<script type="text/javascript" src="./js/glossary.js"></script>
+<script type="text/javascript" src="./js/sushi.js"></script>
+<script type="text/javascript" src="./js/demo.js"></script>
+
+
+</body>
 </html>
