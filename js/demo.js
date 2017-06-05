@@ -44,6 +44,12 @@
 
       if (step >= 0) {
         var currStep = document.querySelector( "#s" + step );
+        if(step != 7){
+          $("#buttons").addClass("hidden");
+        }
+        else{
+          $("#buttons").removeClass("hidden");
+        }
         var ings = currStep.querySelectorAll( ".ingredient" );
         for (var i = 0; i < ings.length; i++) {
           var ang1 = parseInt( ings[i].getAttribute( "data-angle" ) );

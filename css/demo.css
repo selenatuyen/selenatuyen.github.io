@@ -129,11 +129,14 @@ a:hover{
 }
 
 ul li{
-  margin: -1% 2%;
+  margin: -2% 30% -3% -5%; 
   padding:0;
 }
 
 button{
+    /*margin: 15% 5% -10% 40%; */
+    margin:2% 5%;
+    padding:5%;
     background-color: transparent;
     border: none;
     color: white;
@@ -142,12 +145,18 @@ button{
     display: inline-block;
     font-size: 30px;
     font-weight: bold;
-    width: 10%;
     cursor: pointer;
 }
 
 button:hover {
     color: #00cc00;
+}
+
+#buttons{
+  display: inline;
+  right: 45%;
+  bottom: 8%;
+  position: absolute;
 }
 
 .hidden{
@@ -187,7 +196,7 @@ button:hover {
   color: #fff;
   font-family: 'Ubuntu Mono', monospace;
   text-align: left;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 /* what's the styles for next steps */
