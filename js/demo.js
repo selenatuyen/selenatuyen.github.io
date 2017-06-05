@@ -43,6 +43,14 @@
       }
 
       if (step >= 0) {
+        if(step == 0){
+          $("#menu").addClass("hidden");
+          $("#progress").addClass("hidden");
+
+        }else{
+          $("#menu").removeClass("hidden");
+          $("#progress").removeClass("hidden");
+        }
         var currStep = document.querySelector( "#s" + step );
         if(step != 7){
           $("#buttons").addClass("hidden");

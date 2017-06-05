@@ -77,7 +77,11 @@ html, body {
 
 #titleyo{
   font-family: 'VT323', monospace;
-  margin:20% 0% 25% -2%;
+  /*margin:20% 0% 25% -2%;*/
+  left:0;
+  right:0;
+  top:40%;
+  margin:auto;
   text-align: center;
   font-size: 80px;
   color: #00cc00;
@@ -111,7 +115,8 @@ a.pnav{
 
 a:hover{
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);  
+  color:#00cc00;
+  /*background-color: rgba(255, 255, 255, 0.2);  */
 }
 
 .ptitles{
@@ -150,6 +155,24 @@ button{
 
 button:hover {
     color: #00cc00;
+}
+
+.pics{
+  opacity: .7;
+  position: absolute;
+  left: 6%;
+  width: 50%;
+  height: 30%;
+  bottom: 5%;
+}
+
+.pic{
+  opacity: 1;
+  position: absolute;
+  left: 6%;
+  width: 50%;
+  height: 30%;
+  bottom: 5%;
 }
 
 #buttons{
@@ -205,10 +228,10 @@ button:hover {
 }
 
 #index{
-  margin: -5% -10% 1% -6%;
-/*  font-family: 'VT323', monospace;
-  color:#00cc00;*/
-  font-size:32px;
+  margin: -5% -10% 15% -6%;
+  /*font-family: 'VT323', monospace;*/
+  color:#00cc00;
+  font-size:30px;
 }
 
 #desc{
