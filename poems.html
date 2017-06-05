@@ -50,13 +50,16 @@
 			<p class="pcontent">
 			import all you need;</br>
 			</br>
-			a class, public, private, or protected{</br>
-				&emsp;a main function, public (and a string of parameters){</br>
+			public class Mind{</br>
+				&emsp;protected static main(){</br>
 					&emsp; &emsp;//solve all your problems here</br>
 					&emsp; &emsp;//or call for help from another, even yourself</br>
-					&emsp;&emsp; helperFunct(x);</br>
+					&emsp; &emsp;//store what you want to remember;</br>
 					</br>
-					&emsp;&emsp; return if you wish;</br>
+					&emsp; &emsp;for each prob in problems{</br>
+					&emsp; &emsp;&emsp;&emsp;answer = solveProblem(prob);</br>
+					&emsp; &emsp;&emsp;&emsp;problems--;</br>
+					&emsp; &emsp;return if you wish;</br>
 				&emsp;}</br>
 			}</br>	
 			</p>
@@ -84,6 +87,7 @@
 		</div>
 		<div id="s4" class="step">
 			<h1 class="ptitles">Mergesort</h1>
+			<img src="images/vase.gif" class= "pics">
 			<p class="pcontent">
 				Hollow out a shell so I can be cloned<br>
 				Left and right, divide me into halves <br>
@@ -150,14 +154,27 @@
 						
 						
 						<li><b class="btits">Python's Script</b> - python is a programming language often used for scripting</li><br>
-						<li><b class="btits">Crack their Code</b> - Cracking the Coding Interview is a book that is a staple in all software engineer&#39;s libraries.  It is a interview book that teaches how to approach and solve coding interview questions.</li><br>
+						<li><b class="btits">Crack their Code</b> - Cracking the Coding Interview is a book that is a staple in all software engineer&#39;s libraries.</li><br>
 					</ul>
 				</div>
 				<div id="p1" class="dcontent">
 					<h3 class="gsub">The Code</h3>
 					<ul>
 						<li><b class="btits">//</b> - are used to preceed a comment in code, which is a line that will not be compiled by the compiler.</li><br>
-						<li><b class="btits">Call help...even yourself</b>- refers to modularization which is breaking up your code into different functions and calling them to allow reusabilty and ease of debugging. A function calling itself is a concept called recursion which is often used in dynamic programming.</li><br>
+						<li><b class="btits">Call help...even yourself</b>- refers to modularization,breaking up code into different functions and calling them to allow reusabilty and ease of debugging. A function calling itself is a concept called recursion.</li><br>
+						<li><b class="btits"> Typically in code many libraries and external resources need to be imported</b></br>
+						</li>
+						<li>
+							//solve all your problems here<b class="btits"> Code is used to solve problems</b></br>
+							//or call for help from another, even yourself<b class="btits"> Modularization and recursion</b></br>
+							&emsp; &emsp;//store what you want to remember;<b 	class="btits"> Variables store data in code to be reused or returned</b></br>
+									&emsp; &emsp;for each prob in problems{<b class="btits"> For every problem in a list of problems</b></br>
+									&emsp; &emsp;&emsp;&emsp;answer = solveProblem(prob);<b class="btits"> A function solveProblem solves the problem and saves it to a variable answer</b></br>
+									&emsp; &emsp;&emsp;&emsp;problems--;<b class="btits">Decreases total number of problems in list by 1</b></br>
+									&emsp; &emsp;return if you wish;<b class="btits"></b></br>
+								&emsp;}</br>
+							}</br>	
+						</li>
 					</ul>
 				</div>		
 				<div id="p2" class="dcontent">		
@@ -173,7 +190,8 @@
 				<div id="p3" class="dcontent">
 					<h3 class="gsub">Mergesort</h3>
 					<ul>
-						<li><b class="btits">Mergesort</b>-sorting O(nlogn) </li>
+						<li><b class="btits">Mergesort</b>-a sorting algorthim that involves splitting an array until there are only two elements in each subarray.  Once that occurs, sort each subarray and merge with another subarray until it becomes one entire array that is in order. This is often implemented using an empty array of the same size to help copy and move elements easier. </li><br>
+
 					</ul>
 				</div>
 				<div id="p4" class="dcontent">

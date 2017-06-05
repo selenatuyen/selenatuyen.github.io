@@ -157,6 +157,10 @@ button:hover {
     color: #00cc00;
 }
 
+button:focus{
+  outline:none;
+}
+
 .pics{
   opacity: .7;
   position: absolute;
