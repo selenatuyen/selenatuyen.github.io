@@ -79,7 +79,7 @@ svg {
 }
 
 
-.bg-1, .bg-2, .bg-3 {
+.bg-2, .bg-3, .bg-4, .bg-5, .bg-6, .bg-7, .bg-8, .bg-9, .bg-10, .bg-11, .bg-12, .bg-13, .bg-14, .bg-15, .bg-16, .bg-17, .bg-18, .bg-19, .bg-20, .bg-21, .bg-22{
   position: relative;
   height: 800px;
   opacity: 0.90;
@@ -89,19 +89,88 @@ svg {
   background-size: cover;
 
 }
-.bg-1 {
-  background-image: url("beyonceitem2.jpeg");
-  /*min-height: 100%;*/
-}
-
 .bg-2 {
-  background-image: url("omam1.jpg");
-  /*min-height: 100%;*/
+  background-image: url("beyonceitem2.jpeg");
 }
 
 .bg-3 {
-  background-image: url("nbh.jpg");
-  /*min-height: 100%;*/
+  background-image: url("omam1.jpg");
+}
+
+.bg-4 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-5 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-6 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-7 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-8 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-9 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-10 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-11 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-12 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-13 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-14 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-15 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-16 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-17 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-18 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-19 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-20 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-21 {
+  background-image: url("banks2.jpg");
+}
+
+.bg-22 {
+  background-image: url("banks2.jpg");
 }
 
 .caption {
